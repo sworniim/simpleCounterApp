@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice/Widegets/roundedbutton.dart';
+import 'package:practice/Widgets/roundedbutton.dart';
 import 'package:practice/custom_theme.dart';
 
 class HomePage extends StatefulWidget {
