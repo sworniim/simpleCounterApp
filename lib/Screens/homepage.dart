@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   RoundedButton(
-                    bgColor: PrimaryColor.Color,
+                    bgColor: CustomTheme.primaryColors,
                     icond: Icons.add,
                     colord: Colors.black,
                     onPress: () {
