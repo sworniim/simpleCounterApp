@@ -5,14 +5,18 @@ class CustomTextField extends StatelessWidget {
   final IconData? prefixIcon;
   final String title;
   final String hinter;
+  final TextEditingController? cntrll;
 
   const CustomTextField(
-      {Key? key, required this.hinter, required this.title, this.prefixIcon})
+      {Key? key,
+      required this.hinter,
+      required this.title,
+      this.prefixIcon,
+      this.cntrll})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final TextEditingController newController = TextEditingController();
     return Container(
       padding: EdgeInsets.symmetric(horizontal: CustomTheme.commonPadding),
       child: Column(
@@ -43,7 +47,7 @@ class CustomTextField extends StatelessWidget {
               hintStyle:
                   TextStyle(color: CustomTheme.LightGrey.withOpacity(0.5)),
             ),
-            controller: newController,
+            controller: cntrll,
           )
         ],
       ),
